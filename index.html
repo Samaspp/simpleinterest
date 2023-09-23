@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+    <style>
+        *{
+    margin : 10px;
+    padding: 10px;
+    margin-top: 40px;
+    font-family: 'poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    
+    color:#ec5564
+    }
+
+    </style>
+    <script>
+        function calculate()
+        {
+            p= document.getElementById("p").value;          //gets element from body
+            r= document.getElementById("r").value;
+            n= document.getElementById("n").value;
+            result= document.getElementById("result");
+            result.innerHTML="The interest is "+((p*r*n)/100);              //gives the value to inner html
+        }
+       
+    </script>
+</head>
+<body>
+    
+    Principal Amount: <input id="p" size="10" onmouseover="document.bgColor='seashell'" style="background-color: seashell; border-color: #e4828c;" ></br>
+    Rate: <input id="r" size="10" onmouseover="document.bgColor='mistyrose'" style="background-color: seashell; border-color: #e4828c;" ></br>
+    Number of years: <input id="n" size="10" onmouseover="document.bgColor='pink'" style="background-color: seashell; border-color: #e4828c;" ></br></br>
+    <button id="b"  onmouseover="document.bgColor='lightpink'" onclick="calculate()">Calculate</button>
+    <p id="result"  style="color:#ec5564"></p>
+
+</body>
+</html>
